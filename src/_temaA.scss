@@ -1,0 +1,34 @@
+@mixin backGroundColor() {
+  background-color: red;
+}
+@mixin backGroundDarken() {
+  background-color: darken($color: red, $amount: 25%);
+}
+@mixin backGroundLighten() {
+  background-color: lighten($color: red, $amount: 25%);
+}
+
+@mixin boxFont() {
+  font-family: "Lucida Sans";
+}
+@mixin boxStyle() {
+  border-radius: 2px;
+}
+@mixin boxPadding() {
+  padding: 16px;
+}
+
+@mixin mainFont() {
+  font-size: 18px;
+  font-family: Tahoma;
+}
+
+@mixin secondaryFont() {
+  font-size: 12px;
+  font-family: Impact, "Arial Narrow Bold", sans-serif;
+}
+
+@mixin shadowBox() {
+  background-color: white;
+  box-shadow: -7px 7px 7px #000;
+}

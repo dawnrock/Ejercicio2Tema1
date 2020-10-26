@@ -1,0 +1,57 @@
+@import "_temaA.scss";
+
+body {
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 20px;
+  padding: 20px;
+
+  .container {
+    display: grid;
+    gap: 1px;
+    grid-template-columns: 100px;
+    grid-template-rows: repeat(5, 100px);
+    @include boxFont();
+
+    .box-text-base {
+      @include boxPadding();
+      @include backGroundColor();
+      @include boxStyle();
+    }
+
+    .box-text-darken {
+      @include boxPadding();
+      @include backGroundDarken();
+      @include boxStyle();
+    }
+
+    .box-text-lighten {
+      @include boxPadding();
+      @include backGroundLighten();
+      @include boxStyle();
+    }
+
+    .text-without-box {
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+
+      .main-text {
+        @include mainFont();
+      }
+
+      .secondary-text {
+        @include secondaryFont();
+      }
+    }
+    .box-text-shadow {
+      @include boxStyle();
+      @include shadowBox();
+      @include boxPadding();
+    }
+  }
+}

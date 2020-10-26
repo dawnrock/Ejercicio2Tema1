@@ -1,0 +1,34 @@
+@mixin backGroundColor() {
+  background-color: blue;
+}
+@mixin backGroundDarken() {
+  background-color: darken($color: blue, $amount: 25%);
+}
+@mixin backGroundLighten() {
+  background-color: lighten($color: blue, $amount: 25%);
+}
+
+@mixin boxFont() {
+  font-family: "Trebuchet MS";
+}
+@mixin boxStyle() {
+  border-radius: 8px;
+}
+@mixin boxPadding() {
+  padding: 16px;
+}
+
+@mixin mainFont() {
+  font-size: 18px;
+  font-family: Impact;
+}
+
+@mixin secondaryFont() {
+  font-size: 12px;
+  font-family: "Segoe UI", "Open Sans", "Helvetica Neue", sans-serif;
+}
+
+@mixin shadowBox() {
+  background-color: white;
+  box-shadow: 7px 7px 7px #000;
+}
